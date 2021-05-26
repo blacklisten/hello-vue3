@@ -64,6 +64,11 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
+"@popperjs/core@^2.4.4":
+  version "2.9.2"
+  resolved "http://npm.visionacademy.cn/@popperjs%2fcore/-/core-2.9.2.tgz#adea7b6953cbb34651766b0548468e743c6a2353"
+  integrity sha1-rep7aVPLs0ZRdmsFSEaOdDxqI1M=
+
 "@rollup/plugin-commonjs@^16.0.0":
   version "16.0.0"
   resolved "http://npm.visionacademy.cn/@rollup%2fplugin-commonjs/-/plugin-commonjs-16.0.0.tgz#169004d56cd0f0a1d0f35915d31a036b0efe281f"
@@ -222,6 +227,11 @@
     "@types/koa-compose" "*"
     "@types/node" "*"
 
+"@types/lodash@^4.14.161":
+  version "4.14.170"
+  resolved "http://npm.visionacademy.cn/@types%2flodash/-/lodash-4.14.170.tgz#0d67711d4bf7f4ca5147e9091b847479b87925d6"
+  integrity sha1-DWdxHUv39MpRR+kJG4R0ebh5JdY=
+
 "@types/lru-cache@^5.1.0":
   version "5.1.0"
   resolved "http://npm.visionacademy.cn/@types%2flru-cache/-/lru-cache-5.1.0.tgz#57f228f2b80c046b4a1bd5cac031f81f207f4f03"
@@ -266,6 +276,11 @@
   dependencies:
     "@types/mime" "^1"
     "@types/node" "*"
+
+"@vitejs/plugin-vue@^1.2.2":
+  version "1.2.2"
+  resolved "http://npm.visionacademy.cn/@vitejs%2fplugin-vue/-/plugin-vue-1.2.2.tgz#b0038fc11b9099f4cd01fcbf0ee419adda417b52"
+  integrity sha1-sAOPwRuQmfTNAfy/DuQZrdpBe1I=
 
 "@vue/compiler-core@3.0.11":
   version "3.0.11"
@@ -390,6 +405,11 @@ array-union@^2.1.0:
   resolved "http://npm.visionacademy.cn/array-union/-/array-union-2.1.0.tgz#b798420adbeb1de828d84acd8a2e23d3efe85e8d"
   integrity sha1-t5hCCtvrHego2ErNii4j0+/oXo0=
 
+async-validator@^3.4.0:
+  version "3.5.2"
+  resolved "http://npm.visionacademy.cn/async-validator/-/async-validator-3.5.2.tgz#68e866a96824e8b2694ff7a831c1a25c44d5e500"
+  integrity sha1-aOhmqWgk6LJpT/eoMcGiXETV5QA=
+
 at-least-node@^1.0.0:
   version "1.0.0"
   resolved "http://npm.visionacademy.cn/at-least-node/-/at-least-node-1.0.0.tgz#602cd4b46e844ad4effc92a8011a3c46e0238dc2"
@@ -492,6 +512,23 @@ callsites@^3.0.0:
   resolved "http://npm.visionacademy.cn/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
   integrity sha1-s2MKvYlDQy9Us/BRkjjjPNffL3M=
 
+camel-case@^4.1.2:
+  version "4.1.2"
+  resolved "http://npm.visionacademy.cn/camel-case/-/camel-case-4.1.2.tgz#9728072a954f805228225a6deea6b38461e1bd5a"
+  integrity sha1-lygHKpVPgFIoIlpt7qazhGHhvVo=
+  dependencies:
+    pascal-case "^3.1.2"
+    tslib "^2.0.3"
+
+capital-case@^1.0.4:
+  version "1.0.4"
+  resolved "http://npm.visionacademy.cn/capital-case/-/capital-case-1.0.4.tgz#9d130292353c9249f6b00fa5852bee38a717e669"
+  integrity sha1-nRMCkjU8kkn2sA+lhSvuOKcX5mk=
+  dependencies:
+    no-case "^3.0.4"
+    tslib "^2.0.3"
+    upper-case-first "^2.0.2"
+
 chalk@^2.0.0, chalk@^2.4.2:
   version "2.4.2"
   resolved "http://npm.visionacademy.cn/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
@@ -509,7 +546,25 @@ chalk@^4.1.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chokidar@^3.4.2:
+change-case@^4.1.2:
+  version "4.1.2"
+  resolved "http://npm.visionacademy.cn/change-case/-/change-case-4.1.2.tgz#fedfc5f136045e2398c0410ee441f95704641e12"
+  integrity sha1-/t/F8TYEXiOYwEEO5EH5VwRkHhI=
+  dependencies:
+    camel-case "^4.1.2"
+    capital-case "^1.0.4"
+    constant-case "^3.0.4"
+    dot-case "^3.0.4"
+    header-case "^2.0.4"
+    no-case "^3.0.4"
+    param-case "^3.0.4"
+    pascal-case "^3.1.2"
+    path-case "^3.0.4"
+    sentence-case "^3.0.4"
+    snake-case "^3.0.4"
+    tslib "^2.0.3"
+
+"chokidar@>=3.0.0 <4.0.0", chokidar@^3.4.2:
   version "3.5.1"
   resolved "http://npm.visionacademy.cn/chokidar/-/chokidar-3.5.1.tgz#ee9ce7bbebd2b79f49f304799d5468e31e14e68a"
   integrity sha1-7pznu+vSt59J8wR5nVRo4x4U5oo=
@@ -604,6 +659,15 @@ consolidate@^0.16.0:
   dependencies:
     bluebird "^3.7.2"
 
+constant-case@^3.0.4:
+  version "3.0.4"
+  resolved "http://npm.visionacademy.cn/constant-case/-/constant-case-3.0.4.tgz#3b84a9aeaf4cf31ec45e6bf5de91bdfb0589faf1"
+  integrity sha1-O4Sprq9M8x7EXmv13pG9+wWJ+vE=
+  dependencies:
+    no-case "^3.0.4"
+    tslib "^2.0.3"
+    upper-case "^2.0.2"
+
 content-disposition@~0.5.2:
   version "0.5.3"
   resolved "http://npm.visionacademy.cn/content-disposition/-/content-disposition-0.5.3.tgz#e130caf7e7279087c5616c2007d0485698984fbd"
@@ -654,6 +718,11 @@ csstype@^2.6.8:
   resolved "http://npm.visionacademy.cn/csstype/-/csstype-2.6.17.tgz#4cf30eb87e1d1a005d8b6510f95292413f6a1c0e"
   integrity sha1-TPMOuH4dGgBdi2UQ+VKSQT9qHA4=
 
+dayjs@1.x:
+  version "1.10.4"
+  resolved "http://npm.visionacademy.cn/dayjs/-/dayjs-1.10.4.tgz#8e544a9b8683f61783f570980a8a80eaf54ab1e2"
+  integrity sha1-jlRKm4aD9heD9XCYCoqA6vVKseI=
+
 debug@^3.1.0:
   version "3.2.7"
   resolved "http://npm.visionacademy.cn/debug/-/debug-3.2.7.tgz#72580b7e9145fb39b6676f9c5e5fb100b934179a"
@@ -665,6 +734,13 @@ debug@^4.1.1, debug@^4.3.1:
   version "4.3.1"
   resolved "http://npm.visionacademy.cn/debug/-/debug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
   integrity sha1-8NIpxQXgxtjEmsVT0bE9wYP2su4=
+  dependencies:
+    ms "2.1.2"
+
+debug@^4.3.2:
+  version "4.3.2"
+  resolved "http://npm.visionacademy.cn/debug/-/debug-4.3.2.tgz#f0a49c18ac8779e31d4a0c6029dfb76873c7428b"
+  integrity sha1-8KScGKyHeeMdSgxgKd+3aHPHQos=
   dependencies:
     ms "2.1.2"
 
@@ -719,6 +795,14 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
+dot-case@^3.0.4:
+  version "3.0.4"
+  resolved "http://npm.visionacademy.cn/dot-case/-/dot-case-3.0.4.tgz#9b2b670d00a431667a8a75ba29cd1b98809ce751"
+  integrity sha1-mytnDQCkMWZ6inW6Kc0bmICc51E=
+  dependencies:
+    no-case "^3.0.4"
+    tslib "^2.0.3"
+
 dotenv-expand@^5.1.0:
   version "5.1.0"
   resolved "http://npm.visionacademy.cn/dotenv-expand/-/dotenv-expand-5.1.0.tgz#3fbaf020bfd794884072ea26b1e9791d45a629f0"
@@ -738,6 +822,20 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "http://npm.visionacademy.cn/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
+
+element-plus@^1.0.2-beta.44:
+  version "1.0.2-beta.44"
+  resolved "http://npm.visionacademy.cn/element-plus/-/element-plus-1.0.2-beta.44.tgz#7aff122e6181088223027adb65a4a8321e1ef4e9"
+  integrity sha1-ev8SLmGBCIIjAnrbZaSoMh4e9Ok=
+  dependencies:
+    "@popperjs/core" "^2.4.4"
+    "@types/lodash" "^4.14.161"
+    async-validator "^3.4.0"
+    dayjs "1.x"
+    lodash "^4.17.20"
+    mitt "^2.1.0"
+    normalize-wheel "^1.0.1"
+    resize-observer-polyfill "^1.5.1"
 
 emojis-list@^3.0.0:
   version "3.0.0"
@@ -767,6 +865,11 @@ es-module-lexer@^0.3.25:
   version "0.3.26"
   resolved "http://npm.visionacademy.cn/es-module-lexer/-/es-module-lexer-0.3.26.tgz#7b507044e97d5b03b01d4392c74ffeb9c177a83b"
   integrity sha1-e1BwROl9WwOwHUOSx0/+ucF3qDs=
+
+es-module-lexer@^0.4.1:
+  version "0.4.1"
+  resolved "http://npm.visionacademy.cn/es-module-lexer/-/es-module-lexer-0.4.1.tgz#dda8c6a14d8f340a24e34331e0fab0cb50438e0e"
+  integrity sha1-3ajGoU2PNAok40Mx4Pqwy1BDjg4=
 
 esbuild@^0.8.12:
   version "0.8.57"
@@ -955,6 +1058,14 @@ hash-sum@^2.0.0:
   version "2.0.0"
   resolved "http://npm.visionacademy.cn/hash-sum/-/hash-sum-2.0.0.tgz#81d01bb5de8ea4a214ad5d6ead1b523460b0b45a"
   integrity sha1-gdAbtd6OpKIUrV1urRtSNGCwtFo=
+
+header-case@^2.0.4:
+  version "2.0.4"
+  resolved "http://npm.visionacademy.cn/header-case/-/header-case-2.0.4.tgz#5a42e63b55177349cf405beb8d775acabb92c063"
+  integrity sha1-WkLmO1UXc0nPQFvrjXdayruSwGM=
+  dependencies:
+    capital-case "^1.0.4"
+    tslib "^2.0.3"
 
 http-assert@^1.3.0:
   version "1.4.1"
@@ -1332,6 +1443,11 @@ lodash.camelcase@^4.3.0:
   resolved "http://npm.visionacademy.cn/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
   integrity sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
 
+lodash@^4.17.20:
+  version "4.17.21"
+  resolved "http://npm.visionacademy.cn/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=
+
 log-symbols@^4.1.0:
   version "4.1.0"
   resolved "http://npm.visionacademy.cn/log-symbols/-/log-symbols-4.1.0.tgz#3fbdbb95b4683ac9fc785111e792e558d4abd503"
@@ -1339,6 +1455,13 @@ log-symbols@^4.1.0:
   dependencies:
     chalk "^4.1.0"
     is-unicode-supported "^0.1.0"
+
+lower-case@^2.0.2:
+  version "2.0.2"
+  resolved "http://npm.visionacademy.cn/lower-case/-/lower-case-2.0.2.tgz#6fa237c63dbdc4a82ca0fd882e4722dc5e634e28"
+  integrity sha1-b6I3xj29xKgsoP2ILkci3F5jTig=
+  dependencies:
+    tslib "^2.0.3"
 
 lru-cache@^5.1.1:
   version "5.1.1"
@@ -1420,6 +1543,11 @@ minimist@^1.2.0, minimist@^1.2.5:
   resolved "http://npm.visionacademy.cn/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha1-Z9ZgFLZqaoqqDAg8X9WN9OTpdgI=
 
+mitt@^2.1.0:
+  version "2.1.0"
+  resolved "http://npm.visionacademy.cn/mitt/-/mitt-2.1.0.tgz#f740577c23176c6205b121b2973514eade1b2230"
+  integrity sha1-90BXfCMXbGIFsSGylzUU6t4bIjA=
+
 ms@2.0.0:
   version "2.0.0"
   resolved "http://npm.visionacademy.cn/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
@@ -1445,6 +1573,19 @@ negotiator@0.6.2:
   resolved "http://npm.visionacademy.cn/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha1-/qz3zPUlp3rpY0Q2pkiD/+yjRvs=
 
+neo-async@^2.6.2:
+  version "2.6.2"
+  resolved "http://npm.visionacademy.cn/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
+  integrity sha1-tKr7k+OustgXTKU88WOrfXMIMF8=
+
+no-case@^3.0.4:
+  version "3.0.4"
+  resolved "http://npm.visionacademy.cn/no-case/-/no-case-3.0.4.tgz#d361fd5c9800f558551a8369fc0dcd4662b6124d"
+  integrity sha1-02H9XJgA9VhVGoNp/A3NRmK2Ek0=
+  dependencies:
+    lower-case "^2.0.2"
+    tslib "^2.0.3"
+
 node-forge@^0.10.0:
   version "0.10.0"
   resolved "http://npm.visionacademy.cn/node-forge/-/node-forge-0.10.0.tgz#32dea2afb3e9926f02ee5ce8794902691a676bf3"
@@ -1454,6 +1595,11 @@ normalize-path@^3.0.0, normalize-path@~3.0.0:
   version "3.0.0"
   resolved "http://npm.visionacademy.cn/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
   integrity sha1-Dc1p/yOhybEf0JeDFmRKA4ghamU=
+
+normalize-wheel@^1.0.1:
+  version "1.0.1"
+  resolved "http://npm.visionacademy.cn/normalize-wheel/-/normalize-wheel-1.0.1.tgz#aec886affdb045070d856447df62ecf86146ec45"
+  integrity sha1-rsiGr/2wRQcNhWRH32Ls+GFG7EU=
 
 npm-run-path@^4.0.0:
   version "4.0.1"
@@ -1516,6 +1662,14 @@ p-map-series@^2.1.0:
   resolved "http://npm.visionacademy.cn/p-map-series/-/p-map-series-2.1.0.tgz#7560d4c452d9da0c07e692fdbfe6e2c81a2a91f2"
   integrity sha1-dWDUxFLZ2gwH5pL9v+biyBoqkfI=
 
+param-case@^3.0.4:
+  version "3.0.4"
+  resolved "http://npm.visionacademy.cn/param-case/-/param-case-3.0.4.tgz#7d17fe4aa12bde34d4a77d91acfb6219caad01c5"
+  integrity sha1-fRf+SqEr3jTUp32RrPtiGcqtAcU=
+  dependencies:
+    dot-case "^3.0.4"
+    tslib "^2.0.3"
+
 parent-module@^1.0.0:
   version "1.0.1"
   resolved "http://npm.visionacademy.cn/parent-module/-/parent-module-1.0.1.tgz#691d2709e78c79fae3a156622452d00762caaaa2"
@@ -1537,6 +1691,22 @@ parseurl@^1.3.2:
   version "1.3.3"
   resolved "http://npm.visionacademy.cn/parseurl/-/parseurl-1.3.3.tgz#9da19e7bee8d12dff0513ed5b76957793bc2e8d4"
   integrity sha1-naGee+6NEt/wUT7Vt2lXeTvC6NQ=
+
+pascal-case@^3.1.2:
+  version "3.1.2"
+  resolved "http://npm.visionacademy.cn/pascal-case/-/pascal-case-3.1.2.tgz#b48e0ef2b98e205e7c1dae747d0b1508237660eb"
+  integrity sha1-tI4O8rmOIF58Ha50fQsVCCN2YOs=
+  dependencies:
+    no-case "^3.0.4"
+    tslib "^2.0.3"
+
+path-case@^3.0.4:
+  version "3.0.4"
+  resolved "http://npm.visionacademy.cn/path-case/-/path-case-3.0.4.tgz#9168645334eb942658375c56f80b4c0cb5f82c6f"
+  integrity sha1-kWhkUzTrlCZYN1xW+AtMDLX4LG8=
+  dependencies:
+    dot-case "^3.0.4"
+    tslib "^2.0.3"
 
 path-is-absolute@1.0.1, path-is-absolute@^1.0.0:
   version "1.0.1"
@@ -1734,6 +1904,11 @@ requires-port@^1.0.0:
   resolved "http://npm.visionacademy.cn/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
+resize-observer-polyfill@^1.5.1:
+  version "1.5.1"
+  resolved "http://npm.visionacademy.cn/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
+  integrity sha1-DpAg3T0hAkRY1OvSfiPkAmmBBGQ=
+
 resolve-from@^4.0.0:
   version "4.0.0"
   resolved "http://npm.visionacademy.cn/resolve-from/-/resolve-from-4.0.0.tgz#4abcd852ad32dd7baabfe9b40e00a36db5f392e6"
@@ -1838,12 +2013,36 @@ safe-buffer@^5.1.0, safe-buffer@~5.2.0:
   resolved "http://npm.visionacademy.cn/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
   integrity sha1-Hq+fqb2x/dTsdfWPnNtOa3gn7sY=
 
+sass-loader@^11.1.1:
+  version "11.1.1"
+  resolved "http://npm.visionacademy.cn/sass-loader/-/sass-loader-11.1.1.tgz#0db441bbbe197b2af96125bebb7f4be6476b13a7"
+  integrity sha1-DbRBu74Zeyr5YSW+u39L5kdrE6c=
+  dependencies:
+    klona "^2.0.4"
+    neo-async "^2.6.2"
+
+sass@^1.34.0:
+  version "1.34.0"
+  resolved "http://npm.visionacademy.cn/sass/-/sass-1.34.0.tgz#e46d5932d8b0ecc4feb846d861f26a578f7f7172"
+  integrity sha1-5G1ZMtiw7MT+uEbYYfJqV49/cXI=
+  dependencies:
+    chokidar ">=3.0.0 <4.0.0"
+
 selfsigned@^1.10.8:
   version "1.10.11"
   resolved "http://npm.visionacademy.cn/selfsigned/-/selfsigned-1.10.11.tgz#24929cd906fe0f44b6d01fb23999a739537acbe9"
   integrity sha1-JJKc2Qb+D0S20B+yOZmnOVN6y+k=
   dependencies:
     node-forge "^0.10.0"
+
+sentence-case@^3.0.4:
+  version "3.0.4"
+  resolved "http://npm.visionacademy.cn/sentence-case/-/sentence-case-3.0.4.tgz#3645a7b8c117c787fde8702056225bb62a45131f"
+  integrity sha1-NkWnuMEXx4f96HAgViJbtipFEx8=
+  dependencies:
+    no-case "^3.0.4"
+    tslib "^2.0.3"
+    upper-case-first "^2.0.2"
 
 serialize-javascript@^4.0.0:
   version "4.0.0"
@@ -1888,6 +2087,14 @@ slash@^3.0.0:
   version "3.0.0"
   resolved "http://npm.visionacademy.cn/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha1-ZTm+hwwWWtvVJAIg2+Nh8bxNRjQ=
+
+snake-case@^3.0.4:
+  version "3.0.4"
+  resolved "http://npm.visionacademy.cn/snake-case/-/snake-case-3.0.4.tgz#4f2bbd568e9935abdfd593f34c691dadb49c452c"
+  integrity sha1-Tyu9Vo6ZNavf1ZPzTGkdrbScRSw=
+  dependencies:
+    dot-case "^3.0.4"
+    tslib "^2.0.3"
 
 source-map-js@^0.6.2:
   version "0.6.2"
@@ -1993,6 +2200,11 @@ toidentifier@1.0.0:
   resolved "http://npm.visionacademy.cn/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
   integrity sha1-fhvjRw8ed5SLxD2Uo8j013UrpVM=
 
+tslib@^2.0.3:
+  version "2.2.0"
+  resolved "http://npm.visionacademy.cn/tslib/-/tslib-2.2.0.tgz#fb2c475977e35e241311ede2693cee1ec6698f5c"
+  integrity sha1-+yxHWXfjXiQTEe3iaTzuHsZpj1w=
+
 tsscmp@1.0.6:
   version "1.0.6"
   resolved "http://npm.visionacademy.cn/tsscmp/-/tsscmp-1.0.6.tgz#85b99583ac3589ec4bfef825b5000aa911d605eb"
@@ -2011,6 +2223,20 @@ universalify@^2.0.0:
   resolved "http://npm.visionacademy.cn/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
   integrity sha1-daSYTv7cSwiXXFrrc/Uw0C3yVxc=
 
+upper-case-first@^2.0.2:
+  version "2.0.2"
+  resolved "http://npm.visionacademy.cn/upper-case-first/-/upper-case-first-2.0.2.tgz#992c3273f882abd19d1e02894cc147117f844324"
+  integrity sha1-mSwyc/iCq9GdHgKJTMFHEX+EQyQ=
+  dependencies:
+    tslib "^2.0.3"
+
+upper-case@^2.0.2:
+  version "2.0.2"
+  resolved "http://npm.visionacademy.cn/upper-case/-/upper-case-2.0.2.tgz#d89810823faab1df1549b7d97a76f8662bae6f7a"
+  integrity sha1-2JgQgj+qsd8VSbfZenb4Ziuub3o=
+  dependencies:
+    tslib "^2.0.3"
+
 util-deprecate@^1.0.1, util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "http://npm.visionacademy.cn/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
@@ -2020,6 +2246,17 @@ vary@^1.1.2:
   version "1.1.2"
   resolved "http://npm.visionacademy.cn/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
+
+vite-plugin-style-import@^0.10.0:
+  version "0.10.0"
+  resolved "http://npm.visionacademy.cn/vite-plugin-style-import/-/vite-plugin-style-import-0.10.0.tgz#f348ca95b72cdaa212a98c2d4da0dfbf70584165"
+  integrity sha1-80jKlbcs2qISqYwtTaDfv3BYQWU=
+  dependencies:
+    "@rollup/pluginutils" "^4.1.0"
+    change-case "^4.1.2"
+    debug "^4.3.2"
+    es-module-lexer "^0.4.1"
+    magic-string "^0.25.7"
 
 vite@^1.0.0-rc.13:
   version "1.0.0-rc.13"
