@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.1
         with:
           persist-credentials: false
 
@@ -29,6 +29,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: dist
-          GIT_CONFIG_NAME: blacklisten
           GIT_CONFIG_EMAIL: 756319278@qq.com
           COMMIT_MESSAGE: website deploy
