@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import styleImport from 'vite-plugin-style-import'
 
 export default defineConfig({
+  base: '/hello-vue3/',
   plugins: [
     vue(),
     styleImport({
