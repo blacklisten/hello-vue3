@@ -6,15 +6,23 @@ on:
       - master
 
 jobs:
-  publish:
+  master-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        
       - name: Install dependencies
-        run: yarn
+        run: yarn install
+        
       - name: Build Website
         run: yarn build
+        
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
