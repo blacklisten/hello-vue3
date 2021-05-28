@@ -12,6 +12,7 @@ import { useStore } from 'vuex'
 import { key } from '../store'
 import SearchResults from '../components/SearchResults.vue'
 import { ElInput, ElButton } from 'element-plus'
+import axios from 'axios'
 
 export default defineComponent({
   name: 'HelloWorld',
@@ -35,6 +36,14 @@ export default defineComponent({
       count,
       inCrement: () => store.commit('increment')
     }
+  },
+  mounted() {
+    axios.post('/api/createUser', {
+      name: 'vben',
+      gender: 'man',
+    }).then(({ data }) => {
+      console.log(data)
+    })
   }
 })
 </script>

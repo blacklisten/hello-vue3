@@ -16,8 +16,8 @@ jobs:
         
       - name: Install dependencies and build websit
         run: |
-          npm install
-          npm run build
+          yarn
+          yarn build
         
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.7.1
