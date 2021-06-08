@@ -14,7 +14,7 @@ import SearchResults from '../components/SearchResults.vue'
 import { ElInput, ElButton } from 'element-plus'
 import axios from 'axios'
 
-export default defineComponent({
+export default defineComponent({           
   name: 'HelloWorld',
   components: {
     'search-results': SearchResults,
