@@ -26,13 +26,19 @@ export const routes: Array<RouteRecordRaw> = [
         component: () => import('../views/inputTag.vue'),
         name: 'InputTag',
         meta: { title: 'InputTag' }
+      },
+      {
+        path: 'select-datas',
+        component: () => import('../views/selectDatas.vue'),
+        name: 'SelectDatas',
+        meta: { title: 'SelectDatas' }
       }
     ]
   },
   {
     path: '/test',
     name: 'Test',
-    component: () => import('../components/input-tag/index.vue'),
+    component: () => import('../components/select-datas/index.vue'),
     meta: { title: 'Test' }
   }
 ]
